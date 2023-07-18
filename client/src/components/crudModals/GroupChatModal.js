@@ -59,7 +59,7 @@ const GroupChatModal = ({ children }) => {
         },
       };
       const { data } = await axios.get(
-        `https://chatter-box-vt0d.onrender.com/api/user?search=${search}`,
+        `https://chatter-box-web.onrender.com/api/user?search=${search}`,
         config
       );
       //console.log(data);
@@ -100,7 +100,7 @@ const GroupChatModal = ({ children }) => {
         },
       };
       const { data } = await axios.post(
-        `https://chatter-box-vt0d.onrender.com/api/chat/group`,
+        `https://chatter-box-web.onrender.com/api/chat/group`,
         {
           name: groupChatName,
           users: JSON.stringify(selectedUsers.map((u) => u._id)),

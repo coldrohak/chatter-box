@@ -50,7 +50,7 @@ const SearchUsersDrawer = ({ children }) => {
       };
 
       const { data } = await axios.get(
-        `https://chatter-box-vt0d.onrender.com/api/user?search=${search}`,
+        `https://chatter-box-web.onrender.com/api/user?search=${search}`,
         config
       );
 
@@ -80,7 +80,7 @@ const SearchUsersDrawer = ({ children }) => {
         },
       };
       const { data } = await axios.post(
-        `https://chatter-box-vt0d.onrender.com/api/chat`,
+        `https://chatter-box-web.onrender.com/api/chat`,
         { userId },
         config
       );

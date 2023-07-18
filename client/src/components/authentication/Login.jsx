@@ -53,7 +53,7 @@ const Login = () => {
       };
 
       const { data } = await axios.post(
-        `https://chatter-box-vt0d.onrender.com/api/user/login`,
+        `https://chatter-box-web.onrender.com/api/user/login`,
         { email: authValues.email, password: authValues.password },
         config
       );

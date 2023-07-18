@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 
 const SocketContext = createContext();
 
-const socket = io("https://chatter-box-vt0d.onrender.com");
+const socket = io("https://chatter-box-web.onrender.com");
 
 const SocketProvider = ({ children }) => {
   return (

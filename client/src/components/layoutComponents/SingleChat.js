@@ -64,7 +64,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
       setLoading(true);
 
       const { data } = await axios.get(
-        `https://chatter-box-vt0d.onrender.com/api/message/${selectedChat._id}`,
+        `https://chatter-box-web.onrender.com/api/message/${selectedChat._id}`,
         config
       );
       setMessages(data);
@@ -95,7 +95,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
         };
         setNewMessage("");
         const { data } = await axios.post(
-          `https://chatter-box-vt0d.onrender.com/api/message`,
+          `https://chatter-box-web.onrender.com/api/message`,
           {
             content: newMessage,
             chatId: selectedChat,

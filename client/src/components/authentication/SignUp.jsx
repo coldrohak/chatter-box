@@ -67,7 +67,7 @@ const SignUp = () => {
         },
       };
       const { data } = await axios.post(
-        `https://chatter-box-vt0d.onrender.com/api/user`,
+        `https://chatter-box-web.onrender.com/api/user`,
         {
           name: authValues.name,
           email: authValues.email,
